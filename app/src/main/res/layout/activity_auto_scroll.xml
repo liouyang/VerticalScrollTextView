@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"
+            android:id="@+id/bt_stop"
+            />
+        
+    </LinearLayout>
+    
+   <FrameLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#333"
+      >
+       <com.unity.test.VerticalScrollTextView
+           android:layout_width="100dp"
+           android:layout_height="240dp"
+           android:id="@+id/tv_view"
+           />
+   </FrameLayout>
+</LinearLayout>
